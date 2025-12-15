@@ -4,7 +4,7 @@ level: ["Bac Pro CIEL", "BTS CIEL"]
 type: "cours"
 objectifs:
   - "Comprendre les opérations bit à bit"
-  - "Maîtriser les opérateurs &, |, ^, ~, <<, >>"
+  - "Maîtriser les opérateurs &, |, ^, ~, et les décalages"
   - "Appliquer les opérations binaires à des cas pratiques"
 prerequis:
   - "Connaître la représentation binaire des nombres"
@@ -88,7 +88,7 @@ b = 2
 
 ## Les décalages binaires
 
-### Décalage à gauche (<<)
+### Décalage à gauche `<<`
 
 Le décalage à gauche multiplie le nombre par 2^n.
 
@@ -98,7 +98,7 @@ y = x << 1  # 1010 en binaire = 10
 z = x << 2  # 10100 en binaire = 20
 ```
 
-### Décalage à droite (>>)
+### Décalage à droite `>>`
 
 Le décalage à droite divise le nombre par 2^n (division entière).
 
@@ -112,7 +112,7 @@ z = x >> 2  # 00101 en binaire = 5
   id="decalages"
   title="À vous de jouer : Décalages binaires"
   type="code"
-  question="Testez les décalages : 2 >> 1, 2 << 1, 2 << 2"
+  question="Testez les décalages binaires sur le nombre 2"
   placeholder="# Décalages
 nombre = 2
 
@@ -201,8 +201,8 @@ print(est_pair(0))
 | \| | OR | 12 \| 10 | 14 |
 | ^ | XOR | 12 ^ 10 | 6 |
 | ~ | NOT | ~12 | -13 |
-| << | Décalage gauche | 5 << 2 | 20 |
-| >> | Décalage droite | 20 >> 2 | 5 |
+| `<<` | Décalage gauche | 5 `<<` 2 | 20 |
+| `>>` | Décalage droite | 20 `>>` 2 | 5 |
 
 ## Représentation binaire en Python
 
@@ -250,8 +250,8 @@ Les opérations bit à bit sont essentielles pour :
 - `|` : OU logique (activation)
 - `^` : XOR (inversion sélective)
 - `~` : NOT (complément)
-- `<<` : Multiplication par 2^n
-- `>>` : Division par 2^n
+- Décalage gauche : Multiplication par 2^n
+- Décalage droite : Division par 2^n
 
 <TeacherOnly title="Notes pédagogiques">
 
@@ -273,6 +273,6 @@ Les opérations bit à bit sont essentielles pour :
 
 - Confusion entre `&` et `and`, `|` et `or`
 - Incompréhension du complément à 2 pour `~`
-- Oubli que `>>` et `<<` sont des divisions/multiplications par puissances de 2
+- Oubli que les décalages sont des divisions/multiplications par puissances de 2
 
 </TeacherOnly>

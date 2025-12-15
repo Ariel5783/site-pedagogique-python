@@ -95,7 +95,7 @@ Explication : Le résultat a un 1 partout où au moins un des deux nombres a un 
   0011
 
 Explication : XOR donne 1 quand les bits sont différents.
-```text
+```
 
 **Barème (4 points)** :
 - Calcul 1 & 2 correct : 0.5 point
@@ -146,7 +146,7 @@ Chaque bit est décalé d'une position vers la droite.
 
 Explication : Le décalage à gauche multiplie par 2.
 Chaque bit est décalé d'une position vers la gauche.
-```text
+```
 
 **Barème (4 points)** :
 - Calcul `2 >> 1` correct : 1 point
@@ -186,7 +186,7 @@ Utilité des opérateurs : ..."
 ~2    = 11111101 (-3 en complément à 2)
 2 >> 2 = 00000000 (0)
 2 << 2 = 00001000 (8)
-```text
+```
 
 **Utilité des opérateurs** :
 - Optimisation des calculs (multiplication/division par 2^n)
@@ -255,7 +255,7 @@ print(f'(3 & 1) | (2 ^ 3) = {resultat1}')
   1 | 2 = 0001 | 0010 = 0011 (3)
   ~0011 = 1100 (-4 en complément à 2)
   1100 & 0011 = 0000 (0)
-```text
+```
 
 **Barème (4 points)** :
 - Expression 1 correcte : 1 point (0.5 résultat, 0.5 décomposition)
@@ -331,7 +331,7 @@ def est_pair(n: int) -> bool:
 assert est_pair(4) == True   # 0100 : LSB = 0
 assert est_pair(7) == False  # 0111 : LSB = 1
 assert est_pair(0) == True   # 0000 : LSB = 0
-```text
+```
 
 ### 2. Manipulation de flags
 
@@ -370,7 +370,7 @@ print(f"Flags: {bin(opts.flags)}")  # 0b1
 
 opts.activer(Options.ADMIN)
 print(f"Flags: {bin(opts.flags)}")  # 0b1001
-```text
+```
 
 **Barème (4 points)** :
 - Fonction est_pair correcte : 1 point
